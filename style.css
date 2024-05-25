@@ -1,0 +1,48 @@
+body {
+    background-image: url(bilder/209004.jpg); /* Jag valde mitt bakgrund bild*/
+    background-repeat: no-repeat; /* Här så ville jag att bakgrunden ska inte repeateras om den blir för stort*/
+    background-size: auto;
+}
+.anchor {
+    display: block; /* Här så la jag anchor symbolen i center med hjälp av margin left och right och display block*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px; /* Ändrade storlek på symbolen så att den inte blir för stort */
+    position: relative; /* För att Anchor symbolen ska inte vara för högt, så gjorde jag positionen relativit och redigerade top värdet*/
+    top: 150px;
+}
+.ready {
+    font-size: 32px; /* Ändrade storlek på "Are you ready" texten */
+    text-align: center; /* Gjorde att texten var i center av webbplatsen/affischen */
+    position: relative;
+    top: 190px;
+    color: rgb(221, 32, 32);
+}
+.discover {
+    font-size: 36px; /* Samma som jag gjorde på ready klassen */
+    text-align: center;
+    position: relative;
+    top: 210px;
+    color: rgb(221, 32, 32);
+}
+.mainButton {
+    font-size: 36px;
+    padding: 20px;
+    display: block; /* Gjorde så att knappen står i mitten med hjälp av margin och display */
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 240px;
+    width: 20%;
+    border: solid black 3px; /* Jag satte borders på knappen så den ser bättre ut */
+    border-radius: 30px; /* Jag gjorde så att bordern var inte tjock, eftersom jag vill inte att knappen ska se ut som en rektangel */
+    transition: 0.3s; /* Den bestämmer hur snabbt transitionen ska vara på hover effekt */
+}
+.mainButton:hover {
+    background-color: black;
+    color: red;
+}
+a {
+    text-decoration: none; /*Eftersom jag ska ta bort understräckan i en <a> element, så behövde jag ta bort text dekorationen*/
+    color: inherit; /* Jag ville att färgen på texten ska vara på default, i detta fallet, svart*/
+}
